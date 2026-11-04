@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # My First Git Project
 
 ## Student Information
