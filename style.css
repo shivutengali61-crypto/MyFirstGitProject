@@ -1,0 +1,260 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f6ff;
+    color: #22223b;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background: white;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    color: #5426c5;
+    font-size: 23px;
+}
+
+.student-badge {
+    background: #eee8ff;
+    color: #5426c5;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    max-width: 1150px;
+    margin: 45px auto;
+    padding: 65px 40px;
+    background: linear-gradient(135deg, #ffffff, #eeeaff);
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    box-shadow: 0 10px 30px rgba(50, 30, 100, 0.08);
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.welcome {
+    color: #7544db;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #713bd2;
+}
+
+.hero h2 {
+    font-size: 21px;
+    margin-bottom: 18px;
+    color: #514c68;
+}
+
+.description {
+    color: #666;
+    margin-bottom: 28px;
+    max-width: 550px;
+}
+
+.btn {
+    display: inline-block;
+    background: #6839cb;
+    color: white;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #43209a;
+    transform: translateY(-3px);
+}
+
+/* Profile Circle */
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 250px;
+}
+
+.profile-circle {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #713bd2, #b58cff);
+    border: 8px solid white;
+    box-shadow: 0 5px 25px rgba(90, 50, 180, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 65px;
+    font-weight: bold;
+}
+
+/* Common Sections */
+.section {
+    max-width: 1150px;
+    margin: 55px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    color: #5125ad;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* Academic and Interest Cards */
+.academic-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.info-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(90, 50, 180, 0.15);
+}
+
+.info-card h3 {
+    color: #6839cb;
+    margin-bottom: 12px;
+}
+
+/* About Section */
+.about-card {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+    color: #555;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills-container span {
+    background: #e9e1ff;
+    color: #5125ad;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.skills-container span:hover {
+    background: #6839cb;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #5125ad, #8653df);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    margin-top: 60px;
+}
+
+footer h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin: 20px;
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-image {
+        flex: auto;
+    }
+
+    .profile-circle {
+        width: 160px;
+        height: 160px;
+        font-size: 45px;
+    }
+
+    .academic-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+}
